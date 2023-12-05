@@ -1,6 +1,6 @@
 # Tellmann.co.za
 
-We are Leadity,
+We are Tellmann,
 a small team of Web-design & Shopify experts located in Cape Town. We specialize in creating ecommerce websites that drive interaction and sales.
 
 ## Tech Stack
