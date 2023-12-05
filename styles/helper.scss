@@ -1,0 +1,44 @@
+.mobile {
+  @media screen and (min-width: 600px) {
+    display: none !important;
+  }
+}
+
+
+.desktop {
+  @media screen and (max-width: 600px) {
+    display: none !important;
+  }
+}
+
+.bp-0 {
+  @media screen and (min-width: 600px) {
+    display: none !important;
+  }
+}
+
+.bp-1 {
+  @media screen and (max-width: 600px) {
+    display: none !important;
+  }
+}
+
+.hideTransition {
+  transition: none !important;
+}
+
+.opacityHidden {
+  opacity: 0 !important;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+  padding: 0;
+  border-width: 0;
+  white-space: nowrap;
+}

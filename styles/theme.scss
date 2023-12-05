@@ -1,0 +1,190 @@
+/*= ===============FROM FELIXTELLMANN.com ================ */
+
+body {
+  --box-shadow-card: 1px 1px 5px 0 rgb(0 191 165 / 0.5), inset 1px 0 6px 4px rgb(49 118 206 / 11%), 1px 1px 2px 1px #0bc5ea;
+  --box-shadow-card-hover: 1px 1px 5px 0 rgb(0 191 165 / 0.5), 1px 0 6px 4px rgb(49 118 206 / 11%), 1px 1px 2px 1px #0bc5ea;
+  --color-attention: hsl(52, 76%, 57%);
+  --color-background: #f9fafa;
+  --color-blue: hsl(208, 99%, 44%);
+  --color-blue-10: hsla(208, 99%, 44%, 0.1);
+  --color-blue-40: hsla(208, 99%, 44%, 0.4);
+  --color-border: #e2e8f0;
+  --color-border-shadow: rgba(0, 0, 0, 0.05);
+  --color-button: #e2e8f0;
+  --color-button-secondary: #edf2f7;
+  --color-card-highlight: #ebf8ff;
+  --color-card-highlight-border: #90cdf4;
+  --color-code: #336ef5;
+  --color-code-bg: rgba(81, 132, 249, 0.15);
+  --color-faded: #aebcd4;
+  --color-gradient-1: #00bfa5;
+  --color-gradient-2: #3182ce;
+  --color-gradient-3: rgba(11, 197, 234, 0.67);
+  --color-header: #1a202c;
+  --color-header-backdrop-filter: saturate(180%) blur(2rem);
+  --color-header-background: transparent;
+  --color-input-background: #f2f4fa;
+  --color-input-border: #c6c6c8;
+  --color-input-border-focus: #3182ce;
+  --color-input-border-hover: #cbd5e0;
+  --color-link: #3b3b3b;
+  --color-link-hover: #626262;
+  --color-mdx-link: #0178df;
+  --color-primary: #1ec4ee;
+  --color-pro: hsl(172, 100%, 37%);
+  --color-pro-10: hsla(172, 100%, 37%, 0.1);
+  --color-pro-40: hsla(172, 100%, 37%, 0.4);
+  --color-remark-code-bg: #f7fafc;
+  --color-remark-code-title-bg: #e2e8f0;
+  --color-selection: #81e6d9;
+  --color-subdued: #718096;
+  /* --color-text: #2d3748;*/
+  --color-turqois: #1ec4ee;
+  --color-warn: hsl(0, 76%, 57%, 1);
+  --color-warn-10: hsla(0, 76%, 57%, 0.1);
+  --color-warn-40: hsla(0, 76%, 57%, 0.4);
+}
+
+.dark-theme {
+  --box-shadow-card: 0 0 8px 2px hsl(172deg 100% 37% / 24%), inset 1px 0 11px 4px rgb(49 118 206 / 25%), 0 0 1px 1px #0bc5ea52;
+  --box-shadow-card-hover: 0 0 8px 2px hsl(172deg 100% 37% / 24%), 1px 0 11px 4px rgb(49 118 206 / 25%), 0 0 1px 1px #0bc5ea52;
+  --color-body: #f9fafa;
+  --color-border: #373d48;
+  --color-border-shadow: rgba(255, 255, 255, 0.05);
+  --color-button: rgba(255, 255, 255, 0.16);
+  --color-button-secondary: rgb(255, 255, 255, 0.08);
+  --color-card-highlight: #2d3748;
+  --color-card-highlight-border: #718096;
+  --color-faded: #3e4254;
+  --color-header: #fff;
+  --color-header-backdrop-filter: saturate(100%) blur(2rem);
+  --color-header-background: rgba(23, 25, 35, 0.6);
+  --color-input-background: rgb(255, 255, 255, 0.08);
+  --color-input-border: rgba(255, 255, 255, 0.14);
+  --color-input-border-focus: #3182ce;
+  --color-input-border-hover: rgb(255, 255, 255, 0.08);
+  --color-link: rgba(255, 255, 255, 0.8);
+  --color-link-hover: rgb(255, 255, 255, 0.68);
+  --color-mdx-link: #60b3fb;
+  --color-primary: #ee601e;
+  --color-pro: #00bfa5;
+  --color-remark-code-bg: #1a202c;
+  --color-remark-code-title-bg: #2d3748;
+  --color-selection: rgba(11, 197, 234, 0.67);
+  --color-subdued: #718096;
+  --color-text: #a0aec0;
+}
+
+:root {
+  --border-radius: 0.4rem;
+  --font-family: Inter, -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, sans-serif;
+  --p: 1.6rem;
+  --padding-page: 2.4rem;
+  @media screen and (min-width: 600px) {
+    --padding-page: 3.6rem;
+  }
+}
+
+:root {
+  --header-banner-height: 40px;
+  --header-height: calc(var(--header-nav-height) + var(--header-banner-height));
+  --header-nav-height: 64px;
+  --page-margin: 24px;
+  --page-width: 1048px;
+
+  --phone-border: 10px;
+  --phone-border-radius: 34px;
+  --phone-frame-margin: 60px;
+  --phone-height: 532px;
+  --phone-inner-height: calc(var(--phone-height) - var(--phone-border) * 2);
+  --phone-inner-width: calc(var(--phone-width) - var(--phone-border) * 2);
+  --phone-width: 264px;
+}
+
+body {
+  --border: 1px solid #eaeaea;
+  /*= =============== button ================ */
+  --button-brand-color: var(--primary);
+  --button-brand-color-background: transparent;
+  --button-brand-color-background-hover: var(--color-text);
+  --button-brand-color-hover: var(--color-background);
+  --button-brand-color-text: var(--color-text);
+  --button-color-background: #edf2f7;
+  --button-color-background-hover: #e2e8f0;
+  --button-color-text: #1a202c;
+  --button-color-text-hover: var(--primary);
+  --button-secondary-color-background: var(--color-text);
+  --button-secondary-color-background-hover: var(--color-background);
+
+  /*= =============== card ================ */
+  --button-secondary-color-text: var(--color-background);
+  --card-background: var(--color-background);
+  --card-background-hover: var(--color-background);
+  --card-border: var(--border);
+  --card-border-hover: 1px solid transparent;
+  --card-shadow-hover: 0 8px 30px rgba(var(--color-text-rgb), 0.12);
+  --card-text: var(--color-text);
+
+  /*= =============== color ================ */
+  --color-background: #fff;
+  --color-background-rgb: 255, 255, 255;
+  --color-grey-bg-1: #e8e8e8;
+  --color-grey-bg-2: #fafafa;
+  --color-grey-bg-3: #f2f7fc;
+  --color-text: #171717;
+  --color-text-faded: #374256;
+  --color-text-faded-rgb: 45, 55, 72;
+  --color-text-rgb: 23, 23, 23;
+
+  --header-backdrop-filter: saturate(180%) blur(5px);
+
+  /*= =============== header ================ */
+  --header-background: rgba(var(--color-background-rgb), 1);
+  --header-border-bottom: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  --hero-overlay: radial-gradient(61% 70% at 30% 30%, rgb(92 145 171 / 39%) 0, rgb(235 249 255) 100%);
+
+  --nav-color: #666;
+  --nav-font-size: 14px;
+  --nav-hover-color: #000;
+
+  /*= =============== section ================ */
+  --primary: #0ab6ff;
+  --secondary: #00dfd8;
+
+  --section-x-padding: 24px;
+  --section-y-padding: 128px;
+  /*@include responsive-min(600px) {
+    --header-background: rgba(var(--color-background-rgb), 0.87);
+  }*/
+}
+
+.dark-theme {
+
+  --border: 1px solid #333;
+
+  --card-background: linear-gradient(#111, #111) content-box, linear-gradient(90deg, #333, #333) border-box;
+  --card-background-hover: linear-gradient(#111, #111) content-box, linear-gradient(90deg, #ec6192, #ec4c34, #ffbd2b, #ebde56, #57c754, #53a1eb) border-box;
+  --card-border: none;
+  --card-border-hover: none;
+  --card-shadow-hover: none;
+  --card-text: var(--color-text);
+
+  --color-background: #07080a;
+  --color-background-rgb: 7, 8, 10;
+  --color-grey-bg-1: #2f2f2f;
+  --color-grey-bg-2: #0b0d10;
+  --color-grey-bg-3: #111;
+  --color-text: #fff;
+  --color-text-faded: #a0aec0;
+
+  --color-text-faded-rgb: 160, 174, 192;
+  --color-text-rgb: 255, 255, 255;
+  --hero-overlay: radial-gradient(70% 70% at 50% 100%, rgb(22 52 66 / 96%) 0, hsl(194 130% 10% / 0.54) 100%);
+
+  --nav-color: #888;
+  --nav-hover-color: #f1f1f1;
+}
+
+
+
+
