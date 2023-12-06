@@ -129,21 +129,33 @@ export const Work: FC<WorkProps> = ({ style = {} }) => {
 
   useEffect(() => {
     if (activeIndex < workData.length) {
-      setTimeout(() => {
-        setHideTransition(true);
-        setActiveIndex(activeIndex + workData.length);
-        setTimeout(() => {
-          setHideTransition(false);
-        }, 200);
-      }, 200);
+      setTimeout(
+        () => {
+          setHideTransition(true);
+          setActiveIndex(activeIndex + workData.length);
+          setTimeout(
+            () => {
+              setHideTransition(false);
+            },
+            200
+          );
+        },
+        200
+      );
     } else if (activeIndex >= workData.length * 2) {
-      setTimeout(() => {
-        setHideTransition(true);
-        setActiveIndex(activeIndex - workData.length);
-        setTimeout(() => {
-          setHideTransition(false);
-        }, 200);
-      }, 200);
+      setTimeout(
+        () => {
+          setHideTransition(true);
+          setActiveIndex(activeIndex - workData.length);
+          setTimeout(
+            () => {
+              setHideTransition(false);
+            },
+            200
+          );
+        },
+        200
+      );
     }
   }, [activeIndex]);
 
@@ -170,15 +182,15 @@ export const Work: FC<WorkProps> = ({ style = {} }) => {
               <p>{description}</p>
               <h4>What we did:</h4>
               <p>{work}</p>
-              {href ? (
-                <Link href={href}>
-                  <a aria-label={title} rel="noopener noreferrer" target="_blank">
-                    <span className="content__item__link">
-                      View <FiChevronRight />
-                    </span>
-                  </a>
-                </Link>
-              ) : null}
+              {href
+                ? <Link href={href}>
+                    <a aria-label={title} rel="noopener noreferrer" target="_blank">
+                      <span className="content__item__link">
+                        View <FiChevronRight />
+                      </span>
+                    </a>
+                  </Link>
+                : null}
             </div>
           ))}
           <nav>

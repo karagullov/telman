@@ -56,9 +56,12 @@ export const HeaderMobile: FC<HeaderMobileProps> = ({
   const changeColor = (e) => {
     setChangingColor(true);
     toggleColor(e);
-    setTimeout(() => {
-      setChangingColor(false);
-    }, 60);
+    setTimeout(
+      () => {
+        setChangingColor(false);
+      },
+      60
+    );
   };
 
   return (

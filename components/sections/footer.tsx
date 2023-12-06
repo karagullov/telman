@@ -91,9 +91,12 @@ export const Footer: FC<FooterProps> = ({ colorTheme }) => {
     const logo = document.getElementById("logo-link");
     logo.classList.add("hideTransition");
     colorTheme.toggle();
-    setTimeout(() => {
-      logo.classList.remove("hideTransition");
-    }, 60);
+    setTimeout(
+      () => {
+        logo.classList.remove("hideTransition");
+      },
+      60
+    );
   };
 
   return (
@@ -129,16 +132,16 @@ export const Footer: FC<FooterProps> = ({ colorTheme }) => {
           <Logo height={56} width={105} />
           <div className="utility__group">
             <nav className="social-nav">
-              {colorTheme.value === "light-theme" ? (
-                <NavIcon ariaLabel="GitHub" onClick={toggleColor}>
-                  <FiMoon />
-                </NavIcon>
-              ) : null}
-              {colorTheme.value === "dark-theme" ? (
-                <NavIcon ariaLabel="GitHub" onClick={toggleColor}>
-                  <FiSun />
-                </NavIcon>
-              ) : null}
+              {colorTheme.value === "light-theme"
+                ? <NavIcon ariaLabel="GitHub" onClick={toggleColor}>
+                    <FiMoon />
+                  </NavIcon>
+                : null}
+              {colorTheme.value === "dark-theme"
+                ? <NavIcon ariaLabel="GitHub" onClick={toggleColor}>
+                    <FiSun />
+                  </NavIcon>
+                : null}
               {navData.socialNav.map(({ href, icon, target }) => (
                 <NavIcon key={href} ariaLabel="GitHub" href={href} target={target}>
                   {icon}
