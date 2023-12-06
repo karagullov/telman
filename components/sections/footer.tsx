@@ -22,49 +22,62 @@ const footerNavData: {
     ],
   },
   {
-    heading: `Shopify`,
+    heading: `Community`,
     nav: [
-      { href: "https://www.shopify.com/online?ref=liquix", title: "Sell Online", target: "_blank" },
+      { href: "https://medium.com/@XSwap_Protocol", title: "Medium", target: "_blank" },
       {
-        href: "https://www.shopify.com/online/ecommerce-solutions?ref=liquix",
-        title: "Features",
+        href: "https://twitter.com/XSwapProtocol?s=20",
+        title: "XSP Twitter",
         target: "_blank",
       },
       {
-        href: "https://www.shopify.com/tour/ecommerce-website?ref=liquix",
-        title: "Ecommerce Sites",
+        href: "https://twitter.com/XTreasureToken?s=20",
+        title: "XTT Twitter",
         target: "_blank",
       },
-      { href: "https://www.shopify.com/domains?ref=liquix", title: "Domains", target: "_blank" },
-      { href: "https://www.shopify.com/themes?ref=liquix", title: "Themes", target: "_blank" },
-      {
-        href: "https://www.shopify.com/blog/topics/guides?ref=liquix",
-        title: "Guides",
-        target: "_blank",
-      },
+      { href: "https://t.me/real_XSwapProtocol", title: "XSwap Main", target: "_blank" },
+      { href: "https://t.me/XSP_Price", title: "XSwap DEX and Price Discussion", target: "_blank" },
+      // {
+      //   href: "https://www.shopify.com/blog/topics/guides?ref=liquix",
+      //   title: "Guides",
+      //   target: "_blank",
+      // },
     ],
   },
   {
-    heading: `Tools`,
+    heading: `Wallets`,
     nav: [
-      { href: "https://www.canva.com/", title: "Canva design", target: "_blank" },
-      { href: "https://konklone.io/json/", title: "Data Converter", target: "_blank" },
-      { href: "https://unsplash.com/", title: "Free Stock Images", target: "_blank" },
-      { href: "https://www.omnisend.com/", title: "Email Marketing", target: "_blank" },
-      { href: "https://coolors.co/", title: "Coolers", target: "_blank" },
-      { href: "https://web.dev/measure/", title: "Website Performance", target: "_blank" },
-      { href: "https://react-icons.netlify.com/", title: "Find Icons", target: "_blank" },
+      {
+        href: "https://play.google.com/store/apps/details?id=com.finance.xspswap",
+        title: "XSwap Wallet(Android)",
+        target: "_blank",
+      },
+      {
+        href: "https://apps.apple.com/us/app/xswap-wallet/id1665489721",
+        title: "XSwap Wallet(IOS)",
+        target: "_blank",
+      },
+      { href: "https://metamask.io/", title: "Metamask Wallet", target: "_blank" },
+      { href: "https://infinitywallet.io/", title: "Innfinity Wallet", target: "_blank" },
+      { href: "https://dcentwallet.com/", title: "D’Cent Wallet", target: "_blank" },
+      // { href: "https://web.dev/measure/", title: "Website Performance", target: "_blank" },
+      // { href: "https://react-icons.netlify.com/", title: "Find Icons", target: "_blank" },
     ],
   },
   {
     heading: `Support`,
     nav: [
-      { href: "/contact", title: "Contact Us" },
+      { href: "https://t.me/real_XSwapProtocol", title: "Telegram", target: "_blank" },
       // { href: "tel:0763934356", title: "076 393 4356" },
       // { href: "mailto:info@tellmann.co.za", title: "info@tellmann.co.za" },
       /* { href: "/#", title: "FAQ" }, */
-      { href: "/terms", title: "Terms & Conditions" },
-      { href: "/privacy", title: "Privacy Policy" },
+      {
+        href: "https://docs.xspswap.finance/xswap-protocol/contracts/xswap-protocol-contracts",
+        title: "Contracts",
+        target: "_blank",
+      },
+      { href: "https://github.com/XSwapProtocol", title: "GitHub", target: "_blank" },
+      { href: "dex@xspswap.finance", title: "Contact", target: "_blank" },
     ],
   },
 ];
@@ -78,12 +91,9 @@ export const Footer: FC<FooterProps> = ({ colorTheme }) => {
     const logo = document.getElementById("logo-link");
     logo.classList.add("hideTransition");
     colorTheme.toggle();
-    setTimeout(
-      () => {
-        logo.classList.remove("hideTransition");
-      },
-      60
-    );
+    setTimeout(() => {
+      logo.classList.remove("hideTransition");
+    }, 60);
   };
 
   return (
@@ -119,16 +129,16 @@ export const Footer: FC<FooterProps> = ({ colorTheme }) => {
           <Logo height={56} width={105} />
           <div className="utility__group">
             <nav className="social-nav">
-              {colorTheme.value === "light-theme"
-                ? <NavIcon ariaLabel="GitHub" onClick={toggleColor}>
-                    <FiMoon />
-                  </NavIcon>
-                : null}
-              {colorTheme.value === "dark-theme"
-                ? <NavIcon ariaLabel="GitHub" onClick={toggleColor}>
-                    <FiSun />
-                  </NavIcon>
-                : null}
+              {colorTheme.value === "light-theme" ? (
+                <NavIcon ariaLabel="GitHub" onClick={toggleColor}>
+                  <FiMoon />
+                </NavIcon>
+              ) : null}
+              {colorTheme.value === "dark-theme" ? (
+                <NavIcon ariaLabel="GitHub" onClick={toggleColor}>
+                  <FiSun />
+                </NavIcon>
+              ) : null}
               {navData.socialNav.map(({ href, icon, target }) => (
                 <NavIcon key={href} ariaLabel="GitHub" href={href} target={target}>
                   {icon}

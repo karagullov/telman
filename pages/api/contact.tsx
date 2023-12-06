@@ -2,21 +2,27 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.tellmann.co.za",
-  port: 587,
+  // host: "smtp.tellmann.co.za",
+  // port: 587,
+  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.MAIL_USERNAME,
     pass: process.env.MAIL_PASSWORD,
   },
-  tls: {
-    rejectUnauthorized: false,
-  },
+  // tls: {
+  //   rejectUnauthorized: false,
+  // },
 });
 
 const mailer = (body) => {
+  console.log(111, process.env.MAIL_USERNAME);
+
   const message = {
-    from: `TELLMANN.co.za --- CONTACT FORM - <contact-form@tellmann.co.za>`,
-    to: `${process.env.MAIL_CONTACT_FORM_RECEIVER}`,
+    from: process.env.MAIL_USERNAME,
+    to: `${process.env.MAIL_USERNAME}`,
     subject: `CONTACT-FORM --- ${body.email}`,
     text: JSON.stringify(body, null, 2),
     replyTo: body.email,

@@ -29,7 +29,7 @@ export const WhatWeDo: FC = () => {
             color: `#fff`,
           }}
           link={{ href: "contact", title: "Take your store next level." }}
-          title="Shopify"
+          title="Smart contract development"
         />
         <FeatureCard
           clickable
@@ -39,13 +39,13 @@ export const WhatWeDo: FC = () => {
             background: `linear-gradient(0deg, #7928CA, #FF0080)`,
             color: `#fff`,
           }}
-          title="Store Migrations"
+          title="Blockchain Consulting"
         />
         <FeatureCard
           clickable
           content="We specialize in Vend Cloud-based POS to seamlessly integrate your ecommerce & retail stores."
           icon={{ src: <VendLogo />, size: "32px" }}
-          title="Vend POS"
+          title="Blockchain Risk Analysis"
         />
         <FeatureCard
           clickable
@@ -56,7 +56,7 @@ export const WhatWeDo: FC = () => {
             background: `linear-gradient(0deg, #00DFD8, #007CF0)`,
             color: `#fff`,
           }}
-          title="Custom Design"
+          title="Blockchain Integration"
         />
         <FeatureCard
           clickable
@@ -66,7 +66,7 @@ export const WhatWeDo: FC = () => {
             background: `linear-gradient(0deg, #F9CB28, #FF4D4D)`,
             color: `#fff`,
           }}
-          title="Custom Functionality"
+          title="Blockchain Developer"
         />
         <FeatureCard
           clickable
@@ -76,9 +76,9 @@ export const WhatWeDo: FC = () => {
             background: `linear-gradient(58deg, #01cbdd, rgba(60, 212, 243, 0.62))`,
             color: `#fff`,
           }}
-          title="Sales channels"
+          title="NFT Marketplace Development"
         />
-        <FeatureCard
+        {/* <FeatureCard
           clickable
           content="With each project, we perform an in&#8209;depth review & analysis. We cover all aspects of performance, SEO and more."
           icon={{
@@ -108,7 +108,7 @@ export const WhatWeDo: FC = () => {
             color: `#fff`,
           }}
           title="Consultation"
-        />
+        /> */}
       </div>
       <style jsx>{`
         .grid {

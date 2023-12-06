@@ -1,6 +1,9 @@
 import { Div, Header as Header3 } from "components/html-elements";
 import React, { FC, useEffect, useState } from "react";
-import { IoLogoFacebook, IoLogoGithub, IoLogoGoogle, IoLogoInstagram } from "react-icons/io";
+import { IoLogoGithub, IoLogoTwitter } from "react-icons/io";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
+import { FaMediumM } from "react-icons/fa";
 import { ColorTheme } from "use-color-theme";
 
 import { HeaderBanner } from "../header-banner";
@@ -34,24 +37,34 @@ export const navData = {
   // email: "info@tellmann.co.za",
   // tel: "076 393 4356",
   socialNav: [
+    // {
+    //   href: "https://www.facebook.com/Lunalemon.dev",
+    //   icon: <IoLogoFacebook title="Facebook" />,
+    //   target: "_blank",
+    // },
     {
-      href: "https://www.facebook.com/Lunalemon.dev",
-      icon: <IoLogoFacebook title="Facebook" />,
+      href: "https://medium.com/@XSwap_Protocol",
+      icon: <FaMediumM title="Medium" />,
       target: "_blank",
     },
     {
-      href: "https://www.instagram.com/lunalemon.dev",
-      icon: <IoLogoInstagram title="Github" />,
-      target: "_blank",
-    },
-    {
-      href: "https://github.com/luna-lemon",
+      href: "https://github.com/XSwapProtocol",
       icon: <IoLogoGithub title="Github" />,
       target: "_blank",
     },
     {
-      href: "https://g.page/r/CdssFwfkia74EBA?share",
-      icon: <IoLogoGoogle title="Google" />,
+      href: "https://twitter.com/i/flow/login?redirect_after_login=%2FXSwapProtocol",
+      icon: <IoLogoTwitter title="Twitter" />,
+      target: "_blank",
+    },
+    {
+      href: "https://t.me/real_XSwapProtocol",
+      icon: <FaTelegramPlane title="Telegram" />,
+      target: "_blank",
+    },
+    {
+      href: "https://discord.com/invite/gKhvwgGx6E",
+      icon: <FaDiscord title="Discord" />,
       target: "_blank",
     },
   ],

@@ -5,52 +5,80 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { Link } from "../link";
 
 const workData = [
+  // {
+  //   title: "KidsLiving",
+  //   description: `Est. 2008 in Cape Town, now a leading South African baby and kids store, offering an extensive range of imported and locally manufactured high-end products.`,
+  //   work: `Store Migration: BigCommerce to Shopify, Vend POS Integration, Sales Channel Management, Custom Functionality, and Continuous Development.`,
+  //   img: "/images/work-preview-kids-living.jpg",
+  //   href: "https://www.kidsliving.co.za",
+  // },
+  // {
+  //   title: "Turningpoint",
+  //   description: `Ballet and Dancewear company focusing on handmade and high-end dance wear with modern styles and
+  //   designs. Always dedicated to design products that Suit-Your-Body. `,
+  //   work: `Store Migration: WordPress to Shopify, Web design, Custom Functionality, E-commerce consultation, Data Management.`,
+  //   img: "/images/work-preview-turningpoint.jpg",
+  //   href: "https://www.turningpoint.co.za",
+  // },
+  // {
+  //   title: "Matsidiso",
+  //   description: `Inspired by the beautiful diversity of Pan-African cultures. Featuring Vibrant colours and textures that melt into
+  //   designs in a modern way. Run by a wonderful husband and wife team. `,
+  //   work: `Custom App Development, Internationalization, Custom Design, Custom Functionality.`,
+  //   img: "/images/work-preview-matsidiso.jpg",
+  //   href: "https://www.matsidiso.com",
+  // },
+  // {
+  //   title: "Broadway Jewellers",
+  //   description: `Broadway Jewellers provide a wide range of branded watches, Jewellery and accessories. They strive every day to earn the
+  //   confidence and trust of their clients by exceeding their expectations of quality, service, and value.`,
+  //   work: `Store Migration: WordPress to Shopify, Page Review & Analysis, Custom Filter Functionality, Performance & SEO enhancement.`,
+  //   img: "/images/work-preview-broadwayjewellers.jpg",
+  //   href: "https://www.broadwayjewellers.co.za",
+  // },
+  // {
+  //   title: "BushScarf",
+  //   description: `Est. 2016, BushScarf focuses on quality handwoven bamboo and mohair scarves. Locally made and proudly South African,
+  //    the scarves express beauty, elegancy and simplicity through the vivid and strong colour tones in their designs.`,
+  //   work: `E-Commerce Consultation, New Site Setup & Design, Product Photography, Custom Design`,
+  //   img: "/images/work-preview-bushscarf.jpg",
+  //   href: "https://originalthings-za.myshopify.com/",
+  // },
   {
-    title: "KidsLiving",
-    description: `Est. 2008 in Cape Town, now a leading South African baby and kids store, offering an extensive range of imported and locally manufactured high-end products.`,
-    work: `Store Migration: BigCommerce to Shopify, Vend POS Integration, Sales Channel Management, Custom Functionality, and Continuous Development.`,
-    img: "/images/work-preview-kids-living.jpg",
-    href: "https://www.kidsliving.co.za",
+    title: "Swap",
+    description: `XSwap is a decentralized exchange for XRC20 tokens and is built on the XDC Network. It allows all customers to Swap & Earn inside secured pools.`,
+    work: `XSwap DEX allows and facilitates the trading of XRC20 tokens.`,
+    img: "/images/work-preview-xspswap.png",
+    href: "https://app.xspswap.finance/",
   },
   {
-    title: "Turningpoint",
-    description: `Ballet and Dancewear company focusing on handmade and high-end dance wear with modern styles and
-    designs. Always dedicated to design products that Suit-Your-Body. `,
-    work: `Store Migration: WordPress to Shopify, Web design, Custom Functionality, E-commerce consultation, Data Management.`,
-    img: "/images/work-preview-turningpoint.jpg",
-    href: "https://www.turningpoint.co.za",
+    title: "XDC.sale Launchpad",
+    description: `XDC.sale is the first fully decentralized launchpad in the DC network that helps you create your own tokens and launch your project in a fast, easy and cheap way and with no prior code knowledge at all.`,
+    work: `Launch project: create decentralized permissionless presales, Generate token: create configurable XRC-20 tokens without a coding, Locking: increase your project credibility by locking XRC-20 or LP tokens`,
+    img: "/images/work-preview-xdc-sale.png",
+    href: "https://xdc.sale/",
   },
   {
-    title: "Matsidiso",
-    description: `Inspired by the beautiful diversity of Pan-African cultures. Featuring Vibrant colours and textures that melt into
-    designs in a modern way. Run by a wonderful husband and wife team. `,
-    work: `Custom App Development, Internationalization, Custom Design, Custom Functionality.`,
-    img: "/images/work-preview-matsidiso.jpg",
-    href: "https://www.matsidiso.com",
-  },
-  {
-    title: "Broadway Jewellers",
-    description: `Broadway Jewellers provide a wide range of branded watches, Jewellery and accessories. They strive every day to earn the
-    confidence and trust of their clients by exceeding their expectations of quality, service, and value.`,
+    title: "XSwap Analytics",
+    description: `Track and monitor XRC-20 tokens listed in our DEX. In here, Total liquidity, 24h volume, and transactions in the past 24 hrs as well as top pairs for each token will be shown. You can get reports and information about specific XDC addresses in XSwap Analytics.`,
     work: `Store Migration: WordPress to Shopify, Page Review & Analysis, Custom Filter Functionality, Performance & SEO enhancement.`,
-    img: "/images/work-preview-broadwayjewellers.jpg",
-    href: "https://www.broadwayjewellers.co.za",
+    img: "/images/work-preview-analytics.png",
+    href: "https://analytics.xspswap.finance/",
   },
   {
-    title: "BushScarf",
-    description: `Est. 2016, BushScarf focuses on quality handwoven bamboo and mohair scarves. Locally made and proudly South African,
-     the scarves express beauty, elegancy and simplicity through the vivid and strong colour tones in their designs.`,
-    work: `E-Commerce Consultation, New Site Setup & Design, Product Photography, Custom Design`,
-    img: "/images/work-preview-bushscarf.jpg",
-    href: "https://originalthings-za.myshopify.com/",
-  } /* ,
+    title: "AtomX",
+    description: `Decentralized p2p cross-chain/onchain atomic swap platform.`,
+    work: `Store Migration: WordPress to Shopify, Page Review & Analysis, Custom Filter Functionality, Performance & SEO enhancement.`,
+    img: "/images/work-preview-atomx.png",
+    href: "https://atomx.online/",
+  },
   {
-    title: "4",
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur cumque deleniti dolorem eaque explicabo fuga impedit
-          modi recusandae repellendus. Delectus dignissimos est et in ipsa itaque reiciendis, rem, sapiente tempora tempore vitae voluptas.`,
-    img: "/images/work-preview-pichulik.jpg",
-    href: "#"
-  } */,
+    title: "Farming | Staking",
+    description: `Decentralized p2p cross-chain/onchain atomic swap platform.`,
+    work: `Store Migration: WordPress to Shopify, Page Review & Analysis, Custom Filter Functionality, Performance & SEO enhancement.`,
+    img: "/images/work-preview-xdc-farm.png",
+    href: "https://xdc.farm/farms",
+  },
 ];
 
 type WorkProps = {
@@ -101,33 +129,21 @@ export const Work: FC<WorkProps> = ({ style = {} }) => {
 
   useEffect(() => {
     if (activeIndex < workData.length) {
-      setTimeout(
-        () => {
-          setHideTransition(true);
-          setActiveIndex(activeIndex + workData.length);
-          setTimeout(
-            () => {
-              setHideTransition(false);
-            },
-            200
-          );
-        },
-        200
-      );
+      setTimeout(() => {
+        setHideTransition(true);
+        setActiveIndex(activeIndex + workData.length);
+        setTimeout(() => {
+          setHideTransition(false);
+        }, 200);
+      }, 200);
     } else if (activeIndex >= workData.length * 2) {
-      setTimeout(
-        () => {
-          setHideTransition(true);
-          setActiveIndex(activeIndex - workData.length);
-          setTimeout(
-            () => {
-              setHideTransition(false);
-            },
-            200
-          );
-        },
-        200
-      );
+      setTimeout(() => {
+        setHideTransition(true);
+        setActiveIndex(activeIndex - workData.length);
+        setTimeout(() => {
+          setHideTransition(false);
+        }, 200);
+      }, 200);
     }
   }, [activeIndex]);
 
@@ -154,15 +170,15 @@ export const Work: FC<WorkProps> = ({ style = {} }) => {
               <p>{description}</p>
               <h4>What we did:</h4>
               <p>{work}</p>
-              {href
-                ? <Link href={href}>
-                    <a aria-label={title} rel="noopener noreferrer" target="_blank">
-                      <span className="content__item__link">
-                        View <FiChevronRight />
-                      </span>
-                    </a>
-                  </Link>
-                : null}
+              {href ? (
+                <Link href={href}>
+                  <a aria-label={title} rel="noopener noreferrer" target="_blank">
+                    <span className="content__item__link">
+                      View <FiChevronRight />
+                    </span>
+                  </a>
+                </Link>
+              ) : null}
             </div>
           ))}
           <nav>
